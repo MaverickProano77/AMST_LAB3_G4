@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         params.put("username", usuario);
         params.put("password", password);
         JSONObject parametros = new JSONObject(params);
-        String login_url = " https://amst-lab-api.herokuapp.com/db/nuevojwt";
+        String login_url = "https://amst-lab-api.herokuapp.com/db/nuevojwt";
         JsonObjectRequest request = new JsonObjectRequest(
                 Request.Method.POST, login_url, parametros,
                 new Response.Listener<JSONObject>() {
